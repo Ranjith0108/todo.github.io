@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="myModule">
+<head>
+	<meta charset="UTF-8">
+	<title>To Do App</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script type="text/javascript" src="toDo.js"></script>
+	<link rel="stylesheet" type="text/css" href="toDo.css">
+</head>
+<body ng-controller="myCtrl">
+	<div class="container">
+ 	<h2>Enter Your Wish!</h2>
+ 	<input ng-model="task" ng-keyup="searchEnter()" type="text" name="text">
+ 	<div id="tasksToShow">
+ 		<ul>
+ 			<li ng-repeat="oneTask in tasks">
+ 				<input type="checkbox" ng-model="oneTask.status">
+ 				<span contenteditable="false" ng-keydown="enterAgain(oneTask.taskMessage)" ng-dblclick="contentEdit()" ng-model="oneTask.taskMessage" class="done-{{oneTask.status}}"> <!-- now this is nothind but class="incomplete"-->
+					{{oneTask.taskMessage}}
+				</span>
+				<span class="removeItem" ng-click="removeItem($index)">&times;</span>
+ 			</li>
+ 		</ul>
+ 	</div>
+ 	</div>
+</body>
+</html>

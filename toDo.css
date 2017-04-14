@@ -1,0 +1,67 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Apple Chancery", serif;
+	font-size: 20px;
+}
+.container {
+	width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+   /* background: #185a9d;
+    -webkit-box-shadow: 50%px undefinedpx 2px 2px #c18387;
+	box-shadow: 50%px undefinedpx 2px 2px #c18387;*/
+	background: #70e1f5; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #70e1f5 , #ffd194); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+h2 {
+	text-align: center;
+	padding-top: 20px;
+	text-shadow: 1px 1px 0.3px #000;
+}
+
+input[type="text"] {
+	display:block;
+	margin: auto;
+	padding: 8px;
+	width: 300px;
+}
+
+#tasksToShow {
+	border-bottom: 1px solid black;
+}
+
+ul li {
+	list-style-type: none;
+	padding: 7px;
+	text-shadow: 1px 1px 0.2px #000;
+	margin-right: 30px;
+	margin-bottom: 1px;
+	border-left:5px solid red;
+	border-radius: 3px;
+	background: #ED4264; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #ED4264 , #FFEDBC); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #ED4264 , #FFEDBC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+.removeItem {
+	float: right;
+	margin-right: 20px;
+}
+.removeItem:hover {
+	cursor: pointer;
+}
+
+span.done-true {
+	color: grey;
+	font-style: italic;
+	text-decoration: line-through;
+}
+
+span[contenteditable="true"]{
+	background: #0ad3ae;
+	padding: 2px;
+}
